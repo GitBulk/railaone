@@ -3,7 +3,7 @@
 <% end %>
 
 <h2>Your Pragmatic Cart</h2>
-<ul>    
+<ul>
   <% @cart.line_items.each do |item| %>
     <li><%= item.product.title %></li>
   <% end %>

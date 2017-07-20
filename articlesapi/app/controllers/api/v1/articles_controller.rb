@@ -8,6 +8,7 @@ module Api
 
             def show
                 article = Article.select(:id, :body).find(params[:id])
+
                 # returnObj = {
                 #     title: item.article
                 # }
@@ -28,6 +29,7 @@ module Api
 
             def destroy
                 article = Article.find_by_id(params[:id])
+
                 if article.nil?
                     render json: {status: 'FAIL', message: 'Article NOT FOUND', data: {}}, status: :ok
                 else
@@ -38,6 +40,7 @@ module Api
 
             def update
                 article = Article.find(params[:id])
+
                 if article.update_attributes(article_params)
                     render json: {status: 'SUCCESS', message: 'Updated article', data: article}, status: :ok
                 else
