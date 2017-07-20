@@ -8,7 +8,7 @@ end
 
 class Class2
     def print_global
-        puts "Global variable in Class2 is #$global_var"
+        puts "Global variable in Class2 is #$global_var"  
     end
 end
 
