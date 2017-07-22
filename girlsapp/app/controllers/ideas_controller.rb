@@ -10,6 +10,13 @@ class IdeasController < ApplicationController
   # GET /ideas/1
   # GET /ideas/1.json
   def show
+    @comments = @idea.comments.all
+
+    # build is alias of new methodmethod, nohting special
+    # it will not createa a record in database, just create
+    # a new object in memory so that the view can take this
+    # object and display something, especially for a form
+    @comment = @idea.comments.build
   end
 
   # GET /ideas/new
