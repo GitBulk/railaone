@@ -24,7 +24,7 @@
       </p>
     </div>>
   <% end %>
-  <%= render partial: "comments/form" locals: {comment: @comment} %>
+  <%= render partial: "comments/form", locals: {comment: @comment} %>
 </p>
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
