@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Twitter::Application.config.secret_key_base = 'c907071a1a15e0bfca1e29ee53039dfb5a6cc91465386526b4ff8fb969ed22a242b3aade9d0767e75ff04f28c5270e258e2c72e0da9918c73caab99423efffea'
+Twitter::Application.config.secret_key_base = '15d2577a6499f8bc0c2a6f2352558d3abcbace0381b1036da0013b05b20c23ec026c3681304beff0a8793603fa95df5c684ef80e96d80c5444ba843ec42ff14b'
