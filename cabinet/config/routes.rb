@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  resources :kakas
+
+  get 'temp/index'
+
+  get 'temp/show'
+
+  get 'temp/create'
+
+  get 'temp/new'
+
+  get 'temp/edit'
+
+  get 'temp/update'
+
+  get 'temp/destroy'
+
   # get 'docs/index'
 
   # get 'docs/show'
