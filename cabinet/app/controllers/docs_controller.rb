@@ -1,35 +1,36 @@
 class DocsController < ApplicationController
-    def index
+  def index
+  end
 
-    end
+  def show
+  end
 
-    def show
+  def new
 
-    end
+  end
 
-    def new
+  def create
 
-    end
+  end
 
-    def create
+  def edit
 
-    end
+  end
 
-    def edit
+  def update
 
-    end
+  end
 
-    def update
+  def destroy
 
-    end
+  end
 
-    def destroy
+  private
+  def find_doc
 
-    end
+  end
 
-    private
+  def doc_params
 
-    def find_doc
-
-    end
+  end
 end

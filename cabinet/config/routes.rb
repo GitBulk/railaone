@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # get 'docs/index'
+
+  # get 'docs/show'
+  resources :docs
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -56,5 +60,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  resources :doc
+
 end
