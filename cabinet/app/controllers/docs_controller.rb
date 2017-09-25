@@ -21,7 +21,7 @@ class DocsController < ApplicationController
   end
 
   def edit
-
+    puts "kaedit"
   end
 
   def update
