@@ -33,7 +33,7 @@ class DocsController < ApplicationController
 
   def destroy
     @doc.destroy
-    redirect_to :index
+    redirect_to docs_path
   end
 
   private
