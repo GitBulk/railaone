@@ -1,22 +1,9 @@
 <h1>Docs</h1>
-<table>
-  <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th></th>
-      <th></th>
-      <th></th>
-  </tr>
   <% @docs.each do |doc| %>
-    <tr>
-      <td><%= doc.title %></td>
-      <td><%= doc.content %></td>
-      <td><%= link_to "Show", doc %></td>
-      <td><%= link_to "Edit", edit_doc_path(doc) %></td>
-      <td><%= link_to "Delete", doc, method: :delete, data: {confirm: 'Are you sure ?'} %></td>
-    </tr>
+    <h2><%= link_to doc.title, doc %></h2>
+    <p><%= time_ago_in_words(doc.created_at) %></p>
+    <p><%= truncate(doc.content, length:70) %></p>
+    <p><%= link_to "Edit", edit_doc_path(doc) %>&nbsp;<%= link_to "Delete", doc, method: :delete, data: {confirm: 'Are you sure ?'} %></p>
   <% end %>
-</table>
-
 <br />
 <%= link_to  "New doc", new_doc_path %>
