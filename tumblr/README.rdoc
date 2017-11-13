@@ -7,3 +7,4 @@ Video 35
 4. rails g model Post title:string body:text
 
 Video 36
+1. update post controller, view
