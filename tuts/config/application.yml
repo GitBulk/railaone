@@ -1,0 +1,14 @@
+defaults: &defaults
+  AWS_ACCESS_KEY_ID: xxx
+  AWS_SECRET_ACCESS_KEY: xxx
+  S3_BUCKET_NAME:
+  AWS_REGION: ap-southeast-1
+
+development:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
